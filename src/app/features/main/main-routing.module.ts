@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { UploadfeedbackComponent } from './uploadfeedback/uploadfeedback.component';
 
 
 const routes: Routes = [
@@ -8,6 +9,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'feedback',
+    component: UploadfeedbackComponent
   }
 ];
 
@@ -16,4 +21,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class MainRoutingModule { }
-export const MainRoutingComponents = [HomeComponent]
+export const MainRoutingComponents = [HomeComponent, UploadfeedbackComponent];

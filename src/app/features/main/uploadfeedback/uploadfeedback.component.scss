@@ -1,0 +1,205 @@
+.feedbackContainer{
+  background-color:#171717;
+  min-height:100vh;
+  width:100%;
+  .navbar{
+    width:100%;
+    min-height:100px;
+    background-color:#030303;
+    .navSec{
+      width:400px;
+      display: flex;
+      margin:0px auto;
+      align-items: center;
+      min-height:100px;
+      li{
+        flex:1 1;
+        text-align: center;
+        font-size:12px;
+        color:rgba(255,255,255,0.5);
+        a{
+          color:#FFFFFF;
+          height:30px;
+          width:30px;
+          border-radius:15px;
+          background-color: #302f2f;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin:0px auto;
+          margin-bottom:10px;
+          img{
+            opacity: 0.5;
+          }
+        }
+      }
+      li.active{
+        a{
+          background-color: #7e5bdd;
+          img{
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper{
+    width:100%;
+    height:auto;
+    padding:70px 0px;
+    h1{
+      color:#FFFFFF;
+      text-align: center;
+      font-size:36px;
+    }
+    h3{
+      color:#FFFFFF;
+      text-align: center;
+      font-size:22px;
+      margin-top:60px;
+    }
+    button{
+      width:200px;
+      height:50px;
+      border:none;
+      border-radius:5px;
+      margin:40px auto;
+      display:block;
+      font-weight: 600;
+      color:#FFFFFF;  
+      background-color: #0f33ff;
+    }
+    .browseBtn{
+      width:300px;
+      display:flex;
+      height: 30px;
+      border:1px solid rgba(255,255,255,0.6);
+      border-radius:15px;
+      margin:20px auto;
+      align-items: center;
+      .btns{
+        width:100px;
+        position:relative;
+        input{
+          position:relative;
+          opacity: 0;
+          z-index: 2;
+        }
+        span{
+          position: absolute;
+          width:100%;
+          height:30px;
+          top:-3px;
+          left:-1px;
+          background-color: #f435ae;
+          color:#FFFFFF;
+          border-radius:15px 0px 0px 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 13px;
+          font-weight: 600;
+          z-index: 1;
+          cursor: pointer;
+        }
+      }
+      p{
+        color:#FFFFFF;
+        padding-left:10px;
+        font-size:12px;
+      }
+     
+
+    }
+  }
+}
+
+
+
+
+.checkGroup{
+  margin:0px auto;
+  display: flex;
+  justify-content: center;
+  label{
+    margin:30px 0px;
+    padding:0px;
+  }
+}
+.checkcontainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: auto;
+  color:#FFFFFF;
+  background-color: #030303;
+  border-radius:3px;
+  padding:6px 30px 6px 30px;
+  margin:0px 10px;
+  font-size:13px;
+  font-weight: 400;
+  text-align: center;
+  opacity:0.7;
+
+}
+
+/* On mouse-over, add a grey background color */
+.checkcontainer:hover input ~ .checkmark {
+  background-color: #5532b3;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkcontainer input:checked ~ .checkmark {
+  background-color: #5532b3;
+  opacity: 1;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkcontainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkcontainer .checkmark:after {
+  left: 13px;
+  top: 9px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
