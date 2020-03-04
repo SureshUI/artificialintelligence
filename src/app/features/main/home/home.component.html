@@ -1,7 +1,11 @@
-<div class="homeContainer">
-  <div>
-    <img src="./assets/images/brain.gif" class="animated"/>
-    <h1>Feedback Analyser <span>AI</span> <br/>Platform</h1>
-    <a class="trybtn" routerLink="/main/feedback">TRY NOW</a>
+<div class="feedbackContainer">
+  <div class="navbar">
+    <ul class="navSec">
+      <li routerLink="/main/home/feedback" routerLinkActive="active"><a><span><img src="./assets/images/upload.svg" alt="upload" width="16"/></span><label>Upload Feedback</label></a></li>
+      <li routerLink="/main/home/process" routerLinkActive="active"><a><span><img src="./assets/images/process.svg" alt="process" width="16"/></span><label>Process</label></a></li>
+      <li routerLink="/main/home/result" routerLinkActive="active"><a><span><img src="./assets/images/result.svg" alt="Result" width="18"/></span><label>Result</label></a></li>
+    </ul>
+    
   </div>
+  <router-outlet></router-outlet>
 </div>

@@ -24,7 +24,10 @@ time, mark, audio, video {
 *{
   box-sizing: border-box;
 }
-
+a{
+    cursor:pointer;
+  }
+  
 /* make sure to set some focus styles for accessibility */
 :focus {
     outline: 0;
