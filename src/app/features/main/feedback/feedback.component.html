@@ -1,0 +1,36 @@
+<div class="feedbackContainer">
+  <div class="sidebar" [class.active]="togglesidebar">
+    <div class="fixedbar">
+      <div class="head">
+        <h2>Feedback Analyser</h2>
+
+        <a (click)="togglesidebar = !togglesidebar"><img src="./assets/images/menu.svg" width="16" alt="Menu"/></a>
+
+       
+        
+      </div>
+      <ul>
+        <li><a class="active"><img src="./assets/images/home.svg" width="12" /> Home</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mWrapper">
+    <div class="header">
+      <div class="menu">
+        
+      </div>
+      <div class="profile">
+        <div class="dropdown">
+          <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><img src="./assets/images/user.svg" width="20" alt="profile"/></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Logout</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

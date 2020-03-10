@@ -2,7 +2,7 @@
   .wrapper{
     width:100%;
     height:auto;
-    padding:70px 0px;
+    padding:42px 0px;
     h1{
       color:#FFFFFF;
       text-align: center;
@@ -19,7 +19,7 @@
       height:50px;
       border:none;
       border-radius:5px;
-      margin:40px auto;
+      margin:40px auto 0px;
       display:block;
       font-weight: 600;
       color:#FFFFFF;  
@@ -47,7 +47,7 @@
           height:30px;
           top:-3px;
           left:-1px;
-          background-color: #f435ae;
+          background-color: #ee7b44;
           color:#FFFFFF;
           border-radius:15px 0px 0px 15px;
           display: flex;
@@ -181,11 +181,13 @@
   }
   .checkmark{
     width: 100%;
-    display: inline-block;
+    display: flex;
     height:40px;
-    padding:14px;
+    padding:0px 14px;
     margin-right: 0px;
     margin-left: 0px;
+    align-items: center;
+    justify-content: center;
     
   }
   .checkcontainer .checkmark:after{
